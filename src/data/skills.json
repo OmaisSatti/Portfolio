@@ -1,0 +1,58 @@
+[
+  {
+    "name": "React Native",
+    "src": "/images/react.svg"
+  },
+  {
+    "name": "Next.js",
+    "src": "/images/nextjs.svg"
+  },
+  {
+    "name": "Tailwind CSS",
+    "src": "/images/tailwind.svg"
+  },
+  {
+    "name": "Redux",
+    "src": "/images/redux.svg"
+  },
+  {
+    "name": "React.js",
+    "src": "/images/react.svg"
+  },
+  {
+    "name": "TypeScript",
+    "src": "/images/ts.svg"
+  },
+  {
+    "name": "JavaScript",
+    "src": "/images/js.svg"
+  },
+  {
+    "name": "Node.js",
+    "src": "/images/nodejs.svg"
+  },
+  {
+    "name": "Express.js",
+    "src": "/images/express.svg"
+  },
+  {
+    "name": "MongoDB",
+    "src": "/images/mongodb.svg"
+  },
+  {
+    "name": "Firebase",
+    "src": "/images/firebase.svg"
+  },
+  {
+    "name": "GitHub",
+    "src": "/images/github.svg"
+  },
+  {
+    "name": ".Net",
+    "src": "/images/dotnet.svg"
+  },
+  {
+    "name": "Figma",
+    "src": "/images/figma.svg"
+  }
+]

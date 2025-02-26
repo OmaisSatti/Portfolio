@@ -1,0 +1,122 @@
+[
+    {
+        "title": "MenaTcp",
+        "description": "A student learning app offering free courses, with features for...",
+        "image": "/images/developer.svg",
+        "techStack": [
+            {
+                "name": "Express.js",
+                "icon": "/images/express.svg"
+            },
+            {
+                "name": "React",
+                "icon": "/images/react.svg"
+            },
+            {
+                "name": "Node.js",
+                "icon": "/images/nodejs.svg"
+            }
+        ],
+        "link": "https://github.com/OmaisSatti/MenaTcp"
+    },
+    {
+        "title": "NameMaster",
+        "description": "A name-guessing game to help users learn company employee names...",
+        "image": "/images/developer.svg",
+        "techStack": [
+            {
+                "name": "Express.js",
+                "icon": "/images/express.svg"
+            },
+            {
+                "name": "React",
+                "icon": "/images/react.svg"
+            },
+            {
+                "name": "Node.js",
+                "icon": "/images/nodejs.svg"
+            }
+        ],
+        "link": "https://github.com/OmaisSatti/NameMaster"
+    },
+    {
+        "title": "NameMaster",
+        "description": "A name-guessing game to help users learn company employee names...",
+        "image": "/images/developer.svg",
+        "techStack": [
+            {
+                "name": "Express.js",
+                "icon": "/images/express.svg"
+            },
+            {
+                "name": "React",
+                "icon": "/images/react.svg"
+            },
+            {
+                "name": "Node.js",
+                "icon": "/images/nodejs.svg"
+            }
+        ],
+        "link": "https://github.com/OmaisSatti/NameMaster"
+    },
+    {
+        "title": "MenaTcp",
+        "description": "A student learning app offering free courses, with features for...",
+        "image": "/images/developer.svg",
+        "techStack": [
+            {
+                "name": "Express.js",
+                "icon": "/images/express.svg"
+            },
+            {
+                "name": "React",
+                "icon": "/images/react.svg"
+            },
+            {
+                "name": "Node.js",
+                "icon": "/images/nodejs.svg"
+            }
+        ],
+        "link": "https://github.com/OmaisSatti/MenaTcp"
+    },
+    {
+        "title": "NameMaster",
+        "description": "A name-guessing game to help users learn company employee names...",
+        "image": "/images/developer.svg",
+        "techStack": [
+            {
+                "name": "Express.js",
+                "icon": "/images/express.svg"
+            },
+            {
+                "name": "React",
+                "icon": "/images/react.svg"
+            },
+            {
+                "name": "Node.js",
+                "icon": "/images/nodejs.svg"
+            }
+        ],
+        "link": "https://github.com/OmaisSatti/NameMaster"
+    },
+    {
+        "title": "NameMaster",
+        "description": "A name-guessing game to help users learn company employee names...",
+        "image": "/images/developer.svg",
+        "techStack": [
+            {
+                "name": "Express.js",
+                "icon": "/images/express.svg"
+            },
+            {
+                "name": "React",
+                "icon": "/images/react.svg"
+            },
+            {
+                "name": "Node.js",
+                "icon": "/images/nodejs.svg"
+            }
+        ],
+        "link": "https://github.com/OmaisSatti/NameMaster"
+    }
+]

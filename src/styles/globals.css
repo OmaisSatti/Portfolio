@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Light & Dark Mode Variables */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --font-primary: var(--font-space-grotesk);
+  --font-secondary: var(--font-poppins);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* Apply Global Styles */
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-primary), sans-serif;
+  transition: background 0.3s ease, color 0.3s ease;
+  /* Smooth transition */
+}
+
+/* Tailwind Dark Mode Support */
+.dark body {
+  background: #0a0a0a;
+  color: #ededed;
+}
+
+select option {
+  background-color: white;
+  /* Light mode background */
+  color: black;
+}
+
+.dark select option {
+  background-color: #1f2937;
+  /* Dark mode background (gray-800 equivalent) */
+  color: white;
+}
+
+select option:hover {
+  background-color: #0f766e !important;
+  /* Teal-700 */
+  color: white;
+}
