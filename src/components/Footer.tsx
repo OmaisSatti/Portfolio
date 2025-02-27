@@ -1,7 +1,8 @@
 "use client";
 
+import { socialLinks } from "@/data/social";
 import { useState } from "react";
-import { FaGithub, FaLinkedin, FaRegClone, FaClone, FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaRegClone, FaClone } from "react-icons/fa";
 
 const Footer = () => {
   const [copied, setCopied] = useState(false);
@@ -44,18 +45,17 @@ const Footer = () => {
       <div className="mt-6 flex justify-between items-center gap-6 flex-wrap mx-20">
         <p className="text-gray-300 text-sm">© 2024 Omais Satti | All rights reserved</p>
         <div className="flex gap-4">
-          <a href="https://github.com/OmaisSatti" target="_blank">
-            <FaGithub className="text-2xl" />
-          </a>
-          <a href="https://linkedin.com/in/omais-satti-3845b8208" target="_blank">
-            <FaLinkedin className="text-2xl" />
-          </a>
-          <a href="https://www.instagram.com/mrsatti502?igsh=OTMyZWtsNjNpNHQ1" target="_blank">
-            <FaInstagram className="text-2xl" />
-          </a>
-          <a href="https://www.facebook.com/omais.satti.3" target="_blank">
-            <FaFacebook className="text-2xl" />
-          </a>
+          {socialLinks.map((item, index) => (
+            <a
+              key={index}
+              href={item.href}
+              target="_blank"
+              className={`w-10 h-10 flex items-center justify-center rounded-full border transition-all duration-300
+                  border-white text-white hover:bg-white hover:text-teal-700`}
+            >
+              {item.icon}
+            </a>
+          ))}
         </div>
       </div>
     </footer>

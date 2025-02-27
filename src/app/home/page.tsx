@@ -1,9 +1,9 @@
 "use client";
 
-import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { BsDownload } from "react-icons/bs";
+import { LuDownload } from "react-icons/lu";
 import { useTheme } from "@/context/ThemeContext";
 import stats from '@/data/stats.json'
+import { socialLinks } from "@/data/social";
 
 export default function Home() {
     const { darkMode } = useTheme();
@@ -18,7 +18,7 @@ export default function Home() {
     };
 
     return (
-        <main className={`flex flex-col border-b-2 py-4 items-center px-10 md:px-20 lg:px-40 min-h-full transition duration-300 
+        <main className={`flex flex-col border-b-2 pb-5 items-center px-10 md:px-20 lg:px-40 min-h-full transition duration-300 
             ${darkMode ? "bg-gray-900 text-white" : "bg-white text-black"}`}>
 
             {/* Container for Image & Text */}
@@ -48,34 +48,31 @@ export default function Home() {
                     <div className="flex items-center gap-6 mt-6">
                         <button
                             onClick={downloadCV}
-                            className={`px-6 py-3 border rounded-lg font-medium flex items-center gap-2 transition duration-300
+                            className={`px-6 py-3 border rounded-lg font-semibold flex items-center gap-2 transition duration-300
                                 ${darkMode ? "border-teal-400 text-teal-400 hover:bg-teal-600 hover:text-white" : "border-teal-600 text-teal-700 hover:bg-teal-600 hover:text-white"}
                             `}
                             aria-label="Download CV"
                         >
                             <span>Download CV</span>
-                            <BsDownload className={`text-lg transition duration-300 ${darkMode ? "text-white" : "text-black"}`} />
+                            <LuDownload className={`text-lg transition  duration-300  ${darkMode ? "text-white" : "text-black"}`} />
                         </button>
 
                         {/* Social Icons */}
                         <div className="flex gap-4 text-2xl transition duration-300">
-                            <a href="https://github.com/OmaisSatti" target="_blank"
-                                className={`hover:text-teal-900 transition duration-300 ${darkMode ? "text-teal-400 hover:text-teal-500" : "text-teal-700 hover:text-teal-900"}`}>
-                                <FaGithub />
-                            </a>
-                            <a href="https://linkedin.com/in/omais-satti-3845b8208" target="_blank"
-                                className={`hover:text-teal-900 transition duration-300 ${darkMode ? "text-teal-400 hover:text-teal-500" : "text-teal-700 hover:text-teal-900"}`}>
-                                <FaLinkedin />
-                            </a>
-                            <a href="https://www.instagram.com/mrsatti502?igsh=OTMyZWtsNjNpNHQ1" target="_blank"
-                                className={`hover:text-teal-900 transition duration-300 ${darkMode ? "text-teal-400 hover:text-teal-500" : "text-teal-700 hover:text-teal-900"}`}>
-                                <FaInstagram className="text-2xl" />
-                            </a>
-                            <a href="https://www.facebook.com/omais.satti.3" target="_blank"
-                                className={`hover:text-teal-900 transition duration-300 ${darkMode ? "text-teal-400 hover:text-teal-500" : "text-teal-700 hover:text-teal-900"}`}>
-                                <FaFacebook className="text-2xl" />
-                            </a>
+                            {socialLinks.map((item, index) => (
+                                <a
+                                    key={index}
+                                    href={item.href}
+                                    target="_blank"
+                                    className={`w-10 h-10 flex items-center justify-center rounded-full border transition-all duration-300
+                                        ${darkMode ? "border-teal-400 text-teal-400 hover:bg-teal-400 hover:text-gray-900"
+                                            : "border-teal-700 text-teal-700 hover:bg-teal-700 hover:text-white"}`}
+                                >
+                                    {item.icon}
+                                </a>
+                            ))}
                         </div>
+
                     </div>
                 </div>
 

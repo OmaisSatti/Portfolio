@@ -6,7 +6,7 @@ import { FaLocationArrow } from "react-icons/fa";
 
 export default function Projects() {
   const { darkMode } = useTheme();
-
+  
   return (
     <section className={`py-10 transition-all duration-300 ${darkMode ? "bg-gray-900 text-white" : "bg-white text-black"}`}>
       {/* Title */}

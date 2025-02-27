@@ -16,10 +16,10 @@ const Navbar = () => {
     `}>
       <Link href="/">
         <Image
-          src="/images/logo.png" // Path to logo image
+          src="/images/logo1.svg" // Path to logo image
           alt="Omais Satti Logo"
           width={120} // Adjust as needed
-          height={40} // Adjust as needed
+          height={90} // Adjust as needed
           priority // Ensures faster loading
           className="ml-36"
         />
