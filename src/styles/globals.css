@@ -6,8 +6,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --font-primary: var(--font-space-grotesk);
-  --font-secondary: var(--font-poppins);
+  --font-primary: var(  --font-jetBrainsMono);
+  --font-secondary: var(--font-space-grotesk);
 }
 
 @media (prefers-color-scheme: dark) {

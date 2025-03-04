@@ -1,6 +1,6 @@
 [
     {
-        "title": "MenaTcp",
+        "title": "InvoiceAPP",
         "description": "A student learning app offering free courses, with features for...",
         "image": "/images/developer.svg",
         "techStack": [
@@ -20,7 +20,7 @@
         "link": "https://github.com/OmaisSatti/MenaTcp"
     },
     {
-        "title": "NameMaster",
+        "title": "JobPortal",
         "description": "A name-guessing game to help users learn company employee names...",
         "image": "/images/developer.svg",
         "techStack": [
@@ -40,7 +40,7 @@
         "link": "https://github.com/OmaisSatti/NameMaster"
     },
     {
-        "title": "NameMaster",
+        "title": "BharatCash",
         "description": "A name-guessing game to help users learn company employee names...",
         "image": "/images/developer.svg",
         "techStack": [
@@ -60,7 +60,7 @@
         "link": "https://github.com/OmaisSatti/NameMaster"
     },
     {
-        "title": "MenaTcp",
+        "title": "FoodApp",
         "description": "A student learning app offering free courses, with features for...",
         "image": "/images/developer.svg",
         "techStack": [
@@ -80,7 +80,7 @@
         "link": "https://github.com/OmaisSatti/MenaTcp"
     },
     {
-        "title": "NameMaster",
+        "title": "SoulMatch",
         "description": "A name-guessing game to help users learn company employee names...",
         "image": "/images/developer.svg",
         "techStack": [
@@ -100,7 +100,7 @@
         "link": "https://github.com/OmaisSatti/NameMaster"
     },
     {
-        "title": "NameMaster",
+        "title": "SalonApp",
         "description": "A name-guessing game to help users learn company employee names...",
         "image": "/images/developer.svg",
         "techStack": [

@@ -1,4 +1,7 @@
 import type { Config } from "tailwindcss";
+const defaultTheme = require("tailwindcss/defaultTheme");
+const colors = require("tailwindcss/colors");
+const { default: flattenColorPalette } = require("tailwindcss/lib/util/flattenColorPalette");
 
 const config: Config = {
   content: [
@@ -6,7 +9,7 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  darkMode: "class",
+  darkMode: "class", // Enables dark mode with class strategy
   theme: {
     extend: {
       colors: {
@@ -40,7 +43,21 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    addVariablesForColors, // Adds Tailwind colors as CSS variables
+  ],
 };
+
+// Plugin to add Tailwind colors as CSS variables
+function addVariablesForColors({ addBase, theme }: any) {
+  let allColors = flattenColorPalette(theme("colors"));
+  let newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+  );
+
+  addBase({
+    ":root": newVars,
+  });
+}
 
 export default config;
