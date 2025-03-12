@@ -19,26 +19,26 @@ export default function Home() {
     };
 
     return (
-        <main className={`flex flex-col items-center px-10 md:px-20 lg:px-40 min-h-full transition duration-300 
-            ${darkMode ? "bg-gray-900 text-white" : "bg-white text-black"}`}>
+        <main className={`flex flex-col items-center justify-center border-b-4 md:px-16 lg:px-32 shadow-lg shadow-black/35 pb-9 transition duration-300 
+            ${darkMode ? "bg-[#020817] text-white" : "bg-white text-black"}`} >
 
             {/* Container for Image & Text */}
-            <div className="flex flex-col md:flex-row items-center justify-between w-full my-10">
+            <div className="container flex flex-col md:flex-row items-center justify-between h-full mx-auto xl:pb-10 xl:pt-8">
 
                 {/* Left - Intro Section */}
-                <div className="max-w-xl">
-                    <p className={`uppercase font-medium tracking-wide transition duration-300 
+                <div className="text-center xl:text-left order-2 xl:order-none mt-10 xl:mt-0">
+                    <p className={`text-xl uppercase font-medium tracking-wide transition duration-300 
                         ${darkMode ? "text-white" : "text-black"}
                     `}>
                         React Native Mobile App Developer
                     </p>
-                    <h1 className={`text-8xl md:text-8xl font-bold mt-2 leading-tight transition duration-300 
+                    <h1 className={`text-5xl mb-6 font-bold xl:text-8xl leading-tight transition duration-300 
                         ${darkMode ? "text-white" : "text-black"}
                     `}>
                         Hello I'm <br />
                         <span className="text-teal-700">Omais Satti</span>
                     </h1>
-                    <p className={`mt-4 text-lg leading-relaxed transition duration-300 
+                    <p className={`max-w-[500px] mb-9 text-foreground/80 transition duration-300 
                         ${darkMode ? "text-gray-300" : "text-gray-600"}
                     `}>
                         Passionate developer crafting efficient and scalable solutions with expertise in
@@ -46,7 +46,7 @@ export default function Home() {
                     </p>
 
                     {/* Buttons & Icons */}
-                    <div className="flex items-center gap-6 mt-6">
+                    <div className="flex flex-col xl:flex-row items-center gap-6 mt-6">
                         <button
                             onClick={downloadCV}
                             className={`px-6 py-3 border rounded-lg font-semibold flex items-center gap-2 transition duration-300
@@ -78,17 +78,17 @@ export default function Home() {
                 </div>
 
                 {/* Right - Image Section */}
-                <div className="relative flex justify-center items-center">
+                <div className="relative flex justify-center items-center order-1">
                     {/* Profile Image */}
                     <img
                         src="/images/omais.jpeg"
                         alt="Omais Satti"
-                        className="w-96 md:w-96 h-96 md:h-96 rounded-full object-cover shadow-lg transition duration-300"
+                        className="w-[298px] xl:w-[400px] h-[298px] xl:h-[400px] rounded-full object-cover shadow-lg transition duration-300"
                     />
 
                     {/* Animated Circle Around Image */}
                     <motion.svg
-                        className="absolute w-[300px] h-[300px] md:w-[506px] md:h-[506px]"
+                        className="absolute w-[300px] h-[300px] xl:w-[506px] xl:h-[506px]"
                         fill="transparent"
                         viewBox="0 0 506 506"
                         xmlns="http://www.w3.org/2000/svg"

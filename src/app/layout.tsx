@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { Inter, Poppins, Space_Grotesk, JetBrains_Mono } from "next/font/google";
 import "../styles/globals.css";
-import Navbar from "@/components/Navbar";
+import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ThemeProvider } from "@/context/ThemeContext";
+import Head from "next/head";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -44,9 +45,13 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${jetBrainsMono.variable} ${spaceGrotesk.variable} ${inter.variable} ${poppins.variable}`}>
+      <Head>
+        <meta name="format-detection" content="telephone=no, date=no, email=no, address=no" />
+        {/* ... other head tags ... */}
+      </Head>
       <body className="antialiased">
         <ThemeProvider>
-          <Navbar />
+          <Header />
           {children}
           <Footer />
         </ThemeProvider>

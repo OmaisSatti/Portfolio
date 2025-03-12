@@ -27,8 +27,8 @@ export const HoverEffect = ({
       {skills.map((skill, idx) => (
         <div
           key={idx}
-          className={`relative group flex flex-col items-center p-6 rounded-lg shadow-md transition-transform transform hover:scale-105 duration-300 
-            ${darkMode ? "bg-gray-800 text-white" : "bg-gray-200 text-black"}
+          className={`relative group flex flex-col border items-center p-6 rounded-lg shadow-md transition-transform transform hover:scale-105 duration-300 
+            ${darkMode ? "bg-[#050B22] text-white border-[#182660]" : "bg-gray-300 text-black border-gray-300"}
           `}
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
@@ -63,7 +63,7 @@ export const HoverEffect = ({
           />
 
           {/* Skill Name */}
-          <p className="mt-3 font-medium relative z-10">{skill.name}</p>
+          <p className="text-sm mt-3 font-medium relative z-10">{skill.name}</p>
         </div>
       ))}
     </div>

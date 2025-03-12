@@ -10,12 +10,12 @@ export default function Contact() {
 
   return (
     <div className={`flex flex-col md:flex-row justify-center items-center md:items-center p-5 px-0 md:p-10 gap-10 transition duration-300
-      ${darkMode ? "bg-gray-900 text-white" : "bg-white text-black"}
+      ${darkMode ? "bg-[#020817] text-white" : "bg-white text-black"}
     `}>
 
       {/* Contact Form */}
       <div className={`border rounded-lg p-6 md:p-10 w-full md:w-2/3 shadow-md transition duration-300
-        ${darkMode ? "bg-gray-800 border-gray-700 shadow-gray-700" : "bg-white border-gray-300 shadow-gray-300"}
+        ${darkMode ? "bg-[#050B22] border-[#182660] shadow-gray-700" : "bg-white border-gray-300 shadow-gray-300"}
       `}>
         <h2 className={`text-2xl font-bold ${darkMode ? "text-teal-400" : "text-teal-700"}`}>
           Let's work together
@@ -30,14 +30,14 @@ export default function Contact() {
               type="text"
               placeholder="First Name"
               className={`border p-2 w-full rounded focus:outline-none focus:ring-0 transition
-                ${darkMode ? "bg-gray-700 text-white border-gray-600 focus:border-teal-400" : "bg-white text-black border-gray-300 focus:border-teal-700"}
+                ${darkMode ? "bg-[#050B22] text-white border-[#182660] focus:border-teal-400" : "bg-white text-black border-gray-300 focus:border-teal-700"}
               `}
             />
             <input
               type="text"
               placeholder="Last Name"
               className={`border p-2 w-full rounded focus:outline-none focus:ring-0 transition
-                ${darkMode ? "bg-gray-700 text-white border-gray-600 focus:border-teal-700" : "bg-white text-black border-gray-300 focus:border-teal-700"}
+                ${darkMode ? "bg-[#050B22] text-white border-[#182660] focus:border-teal-700" : "bg-white text-black border-gray-300 focus:border-teal-700"}
               `}
             />
           </div>
@@ -47,25 +47,25 @@ export default function Contact() {
               type="email"
               placeholder="Email Address"
               className={`border p-2 w-full rounded focus:outline-none focus:ring-0 transition
-                ${darkMode ? "bg-gray-700 text-white border-gray-600 focus:border-teal-400" : "bg-white text-black border-gray-300 focus:border-teal-700"}
+                ${darkMode ? "bg-[#050B22] text-white border-[#182660] focus:border-teal-400" : "bg-white text-black border-gray-300 focus:border-teal-700"}
               `}
             />
             <input
               type="tel"
               placeholder="Phone Number"
               className={`border p-2 w-full rounded focus:outline-none focus:ring-0 transition
-                ${darkMode ? "bg-gray-700 text-white border-gray-600 focus:border-teal-400" : "bg-white text-black border-gray-300 focus:border-teal-700"}
+                ${darkMode ? "bg-[#050B22] text-white border-[#182660] focus:border-teal-400" : "bg-white text-black border-gray-300 focus:border-teal-700"}
               `}
             />
           </div>
 
           <select className={`border p-2 w-full mt-4 rounded transition
-          ${darkMode ? "bg-gray-700 text-white border-gray-600 focus:border-teal-700 hover:border-teal-700"
+          ${darkMode ? "bg-[#050B22] text-white border-[#182660] focus:border-teal-700 hover:border-teal-700"
               : "bg-white text-gray-500 border-gray-300 focus:border-teal-700 hover:border-teal-700"}`}>
             <option>Select a service</option>
             <option>Mobile App Development</option>
             <option>Web Development</option>
-            <option>Frontend Development</option>
+            <option>Frontend Deve700lopment</option>
             <option>Backend Development</option>
           </select>
 
@@ -73,7 +73,7 @@ export default function Contact() {
           <textarea
             placeholder="Type your message here."
             className={`border p-2 w-full mt-4 h-32 rounded focus:outline-none focus:ring-0 transition
-              ${darkMode ? "bg-gray-700 text-white border-gray-600 focus:border-teal-400" : "bg-white text-black border-gray-300 focus:border-teal-700"}
+              ${darkMode ? "bg-[#050B22] text-white border-[#182660] focus:border-teal-400" : "bg-white text-black border-gray-300 focus:border-teal-700"}
             `}
           ></textarea>
 

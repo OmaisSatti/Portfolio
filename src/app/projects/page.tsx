@@ -9,7 +9,7 @@ export default function Projects() {
   const { darkMode } = useTheme();
 
   return (
-    <section className={`py-10 transition-all duration-300 ${darkMode ? "bg-gray-900 text-white" : "bg-white text-black"}`}>
+    <section className={`py-10 transition-all duration-300 ${darkMode ? "bg-[#020817] text-white" : "bg-white text-black"}`}>
       {/* Title */}
       <div className="max-w-5xl mx-auto text-center mb-10">
         <h2 className="text-3xl font-bold">
@@ -23,7 +23,7 @@ export default function Projects() {
           <Link key={index} href={`/projects/${project.title}`} passHref>
             <div
               className={`cursor-pointer w-full rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105
-                ${darkMode ? "bg-gray-800 border border-gray-700" : "bg-white border border-gray-200"}`}
+                ${darkMode ? "bg-[#050B22] border border-[#182660]" : "bg-white border border-gray-200"}`}
             >
               {/* Project Image */}
               <div className="relative w-full h-64">

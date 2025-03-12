@@ -8,11 +8,11 @@ import Projects from "./projects/page";
 export default function Main() {
 
   return (
-    <div className="overflow-hidden">
+    <>
       <Home />
       <About />
       <Projects />
       <Contact />
-    </div>
+    </>
   );
 }
