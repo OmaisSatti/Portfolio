@@ -2,50 +2,59 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Light & Dark Mode Variables */
+/* Default Light Mode */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --font-primary: var(  --font-jetBrainsMono);
-  --font-secondary: var(--font-space-grotesk);
+  --background: #F8FAFC;
+  --foreground: #020817;
+  --border-color: #d1d5db;
+
+  --primary: #0f766e;
+  --secondary: #e5e7eb;
+  --accent: #0d9488;
+  --overlay-color: rgba(0, 0, 0, 0.08);
+  /* Light Mode */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Dark Mode */
+.dark {
+  --background: #020817;
+  --foreground: #F8FAFC;
+  --border-color: #182660;
+
+  --primary: #0f766e;
+  --secondary: #0a0c11;
+  --accent: #0d9488;
+  --overlay-color: rgba(255, 255, 255, 0.1);
+  /* Dark Mode */
 }
 
-/* Apply Global Styles */
+/* Smooth Theme Transition */
 body {
+  background-color: var(--background);
   color: var(--foreground);
-  background: var(--background);
-  font-family: var(--font-primary), sans-serif;
+  font-family: var(--font-jetBrainsMono), sans-serif; /* Now it works */
   transition: background 0.3s ease, color 0.3s ease;
-  /* Smooth transition */
 }
 
 /* Tailwind Dark Mode Support */
 .dark body {
-  background: #0a0a0a;
-  color: #ededed;
+  background-color: var(--background);
+  color: var(--foreground);
 }
 
 select option {
-  background-color: white;
-  /* Light mode background */
-  color: black;
+  background-color: var(--background);
+  color: var(--foreground);
 }
 
+/* Dark mode options */
 .dark select option {
-  background-color: #1f2937;
-  /* Dark mode background (gray-800 equivalent) */
-  color: white;
+  background-color: var(--secondary);
+  color: var(--foreground);
 }
 
-select option:hover {
-  background-color: #0f766e !important;
-  /* Teal-700 */
-  color: white;
+/* Focus state: Ensure primary color applies */
+select:focus option {
+  background-color: var(--primary) !important;
+  color: white !important;
 }

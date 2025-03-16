@@ -13,11 +13,18 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        background: {
+          DEFAULT: "var(--background)",
+          dark: "var(--background-dark)",
+        },
+        foreground: {
+          DEFAULT: "var(--foreground)",
+          dark: "var(--foreground-dark)",
+        },
         primary: "var(--primary)",
         secondary: "var(--secondary)",
         accent: "var(--accent)",
+        border: "var(--border-color)",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],

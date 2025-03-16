@@ -5,14 +5,12 @@ import { useState } from "react";
 
 export const HoverEffect = ({
   skills,
-  darkMode,
   className,
 }: {
   skills: {
     name: string;
     src: string;
   }[];
-  darkMode: boolean; // ✅ Pass dark mode state
   className?: string;
 }) => {
   let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -28,8 +26,7 @@ export const HoverEffect = ({
         <div
           key={idx}
           className={`relative group flex flex-col border items-center p-6 rounded-lg shadow-md transition-transform transform hover:scale-105 duration-300 
-            ${darkMode ? "bg-[#050B22] text-white border-[#182660]" : "bg-gray-300 text-black border-gray-300"}
-          `}
+            text-foreground bg-secondary dark:bg-background border-secondary/5 dark:border-[#182660]`}
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
@@ -42,7 +39,7 @@ export const HoverEffect = ({
                 initial={{ opacity: 0 }}
                 animate={{
                   opacity: 1,
-                  backgroundColor: darkMode ? "rgba(255, 255, 255, 0.1)" : "rgba(0, 0, 0, 0.1)",
+                  backgroundColor:"var(--overlay-color)",
                   transition: { duration: 0.15 },
                 }}
                 exit={{

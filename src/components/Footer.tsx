@@ -15,7 +15,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-teal-700 text-white text-center p-6">
+    <footer className="bg-primary text-white text-center p-6">
       <h2 className="text-4xl font-semibold">
         Elevate <span className="text-primary text-teal-300">your</span> digital presence <br /> and stand out from the crowd!
       </h2>
@@ -51,7 +51,7 @@ const Footer = () => {
               href={item.href}
               target="_blank"
               className={`w-10 h-10 flex items-center justify-center rounded-full border transition-all duration-300
-                  border-white text-white hover:bg-white hover:text-teal-700`}
+                  border-white text-white hover:bg-white hover:text-primary`}
             >
               {item.icon}
             </a>

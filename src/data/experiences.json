@@ -1,32 +1,32 @@
 [
   {
     "title": "React Native Developer",
-    "company": "Multisyn Tech Pvt Ltd ",
+    "company": "Multisyn Tech",
     "duration": "Jul 2024 - Current",
-    "image": "/icons/multisyn.jpeg"
+    "image": "/icons/multisyn1.png"
   },
   {
     "title": "React Native Developer",
-    "company": "ZySoftec.",
+    "company": "ZySoftec",
     "duration": "Jun 2023 - Jul 2023",
-    "image": "/icons/zysoftec.jpeg"
+    "image": "/icons/zysoftec1.png"
   },
   {
     "title": "Full Stack Developer",
     "company": "Onde Digital",
     "duration": "Jan 2023 - May 2023",
-    "image": "/icons/onde.jpeg"
+    "image": "/icons/onde1.png"
   },
   {
     "title": "React Native Trainer",
-    "company": "Pie-Technologies Pvt Ltd",
+    "company": "Pie-Technologies",
     "duration": "Mar 2024 - May 2024",
-    "image": "/icons/pie.jpeg"
+    "image": "/icons/pie1.png"
   },
   {
     "title": "React Native Trainer",
-    "company": "Aridian Technologies LLC",
+    "company": "Aridian Technologies",
     "duration": "Mar 2024 - Jun 2024",
-    "image": "/icons/at.jpeg"
+    "image": "/icons/at1.png"
   }
 ]

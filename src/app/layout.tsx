@@ -4,7 +4,6 @@ import "../styles/globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ThemeProvider } from "@/context/ThemeContext";
-import Head from "next/head";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -12,20 +11,17 @@ const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk", // Define a CSS variable
 });
 
-/* Load Inter Font */
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter", // Creates a global variable for Inter
 });
 
-/* Load Poppins Font */
 const poppins = Poppins({
   subsets: ["latin"],
   display: "swap",
   weight: ["300", "400", "500", "600", "700"], // Include different font weights
   variable: "--font-poppins", // Creates a global variable for Poppins
 });
-
 
 const jetBrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -45,10 +41,9 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${jetBrainsMono.variable} ${spaceGrotesk.variable} ${inter.variable} ${poppins.variable}`}>
-      <Head>
-        <meta name="format-detection" content="telephone=no, date=no, email=no, address=no" />
-        {/* ... other head tags ... */}
-      </Head>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+      </head>
       <body className="antialiased">
         <ThemeProvider>
           <Header />

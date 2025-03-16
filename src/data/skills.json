@@ -5,7 +5,7 @@
   },
   {
     "name": "Next.js",
-    "src": "/images/nextjs.svg"
+    "src": "/images/nextjs.png"
   },
   {
     "name": "Tailwind CSS",
@@ -33,7 +33,7 @@
   },
   {
     "name": "Express.js",
-    "src": "/images/express.svg"
+    "src": "/images/express.png"
   },
   {
     "name": "MongoDB",
@@ -48,8 +48,8 @@
     "src": "/images/github.svg"
   },
   {
-    "name": ".Net",
-    "src": "/images/dotnet.svg"
+    "name": "C#.Net",
+    "src": "/images/csharp.svg"
   },
   {
     "name": "Figma",

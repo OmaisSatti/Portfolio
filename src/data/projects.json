@@ -6,7 +6,7 @@
         "techStack": [
             {
                 "name": "Express.js",
-                "icon": "/images/express.svg"
+                "icon": "/images/express.png"
             },
             {
                 "name": "React",
@@ -26,7 +26,7 @@
         "techStack": [
             {
                 "name": "Express.js",
-                "icon": "/images/express.svg"
+                "icon": "/images/express.png"
             },
             {
                 "name": "React",
@@ -46,7 +46,7 @@
         "techStack": [
             {
                 "name": "Express.js",
-                "icon": "/images/express.svg"
+                "icon": "/images/express.png"
             },
             {
                 "name": "React",
@@ -66,7 +66,7 @@
         "techStack": [
             {
                 "name": "Express.js",
-                "icon": "/images/express.svg"
+                "icon": "/images/express.png"
             },
             {
                 "name": "React",
@@ -86,7 +86,7 @@
         "techStack": [
             {
                 "name": "Express.js",
-                "icon": "/images/express.svg"
+                "icon": "/images/express.png"
             },
             {
                 "name": "React",
@@ -106,7 +106,7 @@
         "techStack": [
             {
                 "name": "Express.js",
-                "icon": "/images/express.svg"
+                "icon": "/images/express.png"
             },
             {
                 "name": "React",
