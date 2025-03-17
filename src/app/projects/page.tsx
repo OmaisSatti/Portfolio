@@ -48,6 +48,7 @@ export default function Projects() {
                   ))}
                 </div>
 
+
                 {/* View Details Button */}
                 <div className="flex justify-end">
                   <span

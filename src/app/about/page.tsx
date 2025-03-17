@@ -20,8 +20,7 @@ export default function About() {
             <BackgroundGradient key={index} className="rounded-xl">
               <div key={index}
                 className="rounded-xl w-full shadow-lg xl:p-10 xl:px-6 p-5 flex items-center gap-4 lg:gap-6 border 
-                         transition-transform transform hover:scale-105 duration-300 bg-background border-border
-                          text-foreground">
+                         transition-transform transform hover:scale-105 duration-300 bg-background border-border text-foreground">
                 {/* Experience Image */}
                 <img src={exp.image} alt={exp.title} className="w-20 h-20 flex-shrink-0" />
 

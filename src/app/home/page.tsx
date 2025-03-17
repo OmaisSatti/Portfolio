@@ -6,6 +6,7 @@ import Stats from "@/components/Stats";
 import { motion } from "framer-motion";
 
 export default function Home() {
+
   const downloadCV = () => {
     const link = document.createElement("a");
     link.href = "/images/Omais-Satti-Resume.pdf";
@@ -67,6 +68,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+
         {/* Right - Image Section */}
         <div className="relative flex justify-center items-center order-1">
           {/* Profile Image */}

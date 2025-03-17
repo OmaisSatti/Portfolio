@@ -47,7 +47,7 @@ const Header = () => {
               )}
             </button>
             <button
-              className={`px-3 py-1 border rounded-lg flex items-center gap-6 text-white bg-primary border-primary hover:bg-teal-500`}
+              className={`px-3 py-1 border rounded-lg flex items-center gap-6 text-white bg-primary border-primary hover:border-teal-500 hover:bg-teal-500`}
             >
               <Link href="/contact" className="px-3 py-2 font-medium">
                 Hire me
@@ -56,7 +56,7 @@ const Header = () => {
           </div>
         </div>
         <button className="xl:hidden text-primary" onClick={() => setIsOpen(true)}>
-          <CiMenuFries size={40}/>
+          <CiMenuFries size={35} />
         </button>
       </div>
 
@@ -77,14 +77,14 @@ const Header = () => {
               )}
             </button>
             <button className="text-2xl" onClick={() => setIsOpen(false)}>
-              <IoClose className="text-foreground"/>
+              <IoClose className="text-foreground" />
             </button>
           </div>
           <div className="flex justify-center items-center w-full py-10">
             <img
               src="/images/logo.png"
               alt="Omais Satti Logo"
-              className="w-[180px] h-40"
+              className="w-[140px] h-30"
             />
           </div>
           <nav className="flex flex-col gap-8 items-center my-10"> {/* Center the links */}
