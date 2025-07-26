@@ -1,7 +1,7 @@
 [
     {
         "title": "InvoiceAPP",
-        "description": "A student learning app offering free courses, with features for...",
+        "description": "InvoiceApp simplifies invoice management for businesses and freelancers.Create, send, and track invoices effortlessly, with features for automated calculations, payment reminders, and detailed reporting.",
         "image": "/images/developer.svg",
         "techStack": [
             {

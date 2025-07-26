@@ -4,6 +4,7 @@ import { LuDownload } from "react-icons/lu";
 import { socialLinks } from "@/data/social";
 import Stats from "@/components/Stats";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Home() {
 
@@ -18,7 +19,7 @@ export default function Home() {
 
   return (
     <main
-      className={`flex flex-col items-center justify-center md:px-16 lg:px-32 shadow-lg shadow-black/35 pb-9 transition duration-300 bg-background text-foreground`}
+      className={`flex flex-col items-center justify-center md:px-16 lg:px-32 shadow-lg shadow-teal-700/15 pb-9 transition duration-300 bg-background text-foreground`}
     >
       {/* Container for Image & Text */}
       <div className="container flex flex-col md:flex-row items-center justify-between h-full mx-auto xl:pb-10 xl:pt-8">
@@ -32,7 +33,7 @@ export default function Home() {
           <h1
             className={`text-5xl mb-6 font-bold xl:text-8xl leading-tight transition duration-300 text-foreground`}
           >
-            Hello I'm <br />
+            Hello I&rsquo;m <br />
             <span className="text-primary">Omais Satti</span>
           </h1>
           <p className="max-w-[500px] mb-9 text-foreground/80 transition duration-300 text-foreground/80">
@@ -72,11 +73,14 @@ export default function Home() {
         {/* Right - Image Section */}
         <div className="relative flex justify-center items-center order-1">
           {/* Profile Image */}
-          <img
+          <Image
             src="/images/omais.jpeg"
             alt="Omais Satti"
+            width={400}
+            height={400}
             className="w-[298px] xl:w-[400px] h-[298px] xl:h-[400px] rounded-full object-cover shadow-lg transition duration-300"
           />
+
 
           {/* Animated Circle Around Image */}
           <motion.svg

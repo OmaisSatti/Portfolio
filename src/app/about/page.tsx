@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Skills from "@/components/Skills";
 import experiences from "@/data/experiences.json";
 import { BackgroundGradient } from "@/components/ui/background-gradient";
@@ -22,7 +23,14 @@ export default function About() {
                 className="rounded-xl w-full shadow-lg xl:p-10 xl:px-6 p-5 flex items-center gap-4 lg:gap-6 border 
                          transition-transform transform hover:scale-105 duration-300 bg-background border-border text-foreground">
                 {/* Experience Image */}
-                <img src={exp.image} alt={exp.title} className="w-20 h-20 flex-shrink-0" />
+                <Image
+                  src={exp.image}
+                  alt={exp.title}
+                  width={80}
+                  height={80}
+                  className="w-20 h-20 flex-shrink-0 object-cover rounded-full"
+                />
+
 
                 {/* Experience Details */}
                 <div>

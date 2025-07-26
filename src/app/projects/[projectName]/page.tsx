@@ -1,62 +1,29 @@
-'use client'
-import Image from "next/image";
-import { notFound } from "next/navigation";
-import projects from "@/data/projects.json";
-import { useTheme } from "@/context/ThemeContext";
+'use client';
 
-export default function ProjectPage({ params }: { params: { projectName: string } }) {
-    const { darkMode } = useTheme(); // Get dark mode state
+import projects from '@/data/projects.json';
+import Image from 'next/image';
 
-    // Find project by title (case insensitive)
-    const project = projects.find(
-        (p) => p.title.toLowerCase() === decodeURIComponent(params.projectName.toLowerCase())
-    );
-
-    // If project not found, show 404
-    if (!project) {
-        console.error(`Project not found: ${params.projectName}`);
-        return notFound();
-    }
+export default function ProjectPage() {
+    // const params = useParams();
 
     return (
-        <div className={`flex items-center justify-center min-h-screen px-6 md:px-20 transition-all duration-300 
-            ${darkMode ? "bg-gray-900 text-white" : "bg-gray-50 text-black"}`}>
+        <div className='flex flex-col lg:flex-row items-center justify-evenly py-10 px-4 md:px-8 shadow-inner shadow-green-500/15 bg-background'>
+            {/* Left Content */}
+            <div className='flex flex-col justify-center order-2 lg:order-none max-w-[600px] text-center lg:text-left'>
+                <h2 className='text-4xl text-primary font-bold mb-10'>{projects[0].title}</h2>
+                <p className='text-foreground'>{projects[0].description}</p>
+            </div>
 
-            <div className="grid md:grid-cols-2 gap-10 items-center max-w-6xl">
-                {/* Left Side - Text */}
-                <div>
-                    <h1 className={`text-4xl font-bold ${darkMode ? "text-teal-400" : "text-teal-800"}`}>
-                        {project.title}
-                    </h1>
-                    <p className={`mt-4 ${darkMode ? "text-gray-300" : "text-gray-600"}`}>
-                        This project showcases a cutting-edge solution designed to
-                        streamline workflows and enhance productivity. Built with modern frameworks,
-                        it ensures high performance and scalability. The intuitive user interface makes
-                        navigation seamless, providing an excellent user experience.
-                        Security and efficiency are at the core, making it a reliable choice for businesses.
-                    </p>
-
-                    {/* Dummy Fixed Info */}
-                    <ul className={`mt-6 space-y-3 text-lg ${darkMode ? "text-gray-400" : "text-gray-700"}`}>
-                        <li>✅ Built with modern technologies</li>
-                        <li>🔹 Highly scalable and efficient</li>
-                        <li>🚀 Optimized for performance and speed</li>
-                        <li>🛠️ Easy customization and integration</li>
-                        <li>📱 Fully responsive design</li>
-                    </ul>
-                </div>
-
-                {/* Right Side - Image */}
-                <div className="relative w-full">
-                    <Image
-                        src={project?.image}
-                        alt={project.title}
-                        width={800}
-                        height={500}
-                        className="rounded-lg shadow-lg"
-                        priority
-                    />
-                </div>
+            {/* Right Image */}
+            <div className='order-1 lg:order-none mb-10 lg:mb-0 border rounded-2xl border-border'>
+                <Image
+                    src={projects[0].image}
+                    alt={projects[0].title}
+                    width={400}
+                    height={300}
+                    className='rounded-3xl object-cover shadow-lg'
+                    priority
+                />
             </div>
         </div>
     );

@@ -26,9 +26,8 @@ export default function Projects() {
                 <Image
                   src={project.image}
                   alt={project.title}
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-t-lg"
+                  fill
+                  className="object-cover rounded-t-lg"
                 />
               </div>
 
