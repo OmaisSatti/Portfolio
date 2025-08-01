@@ -20,7 +20,7 @@ export default function Projects() {
           <Link key={index} href={`/projects/${project.id}`} passHref>
             <div className="cursor-pointer w-full rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105 bg-background border dark:border-[#182660]">
               {/* Project Image */}
-              <div className="relative w-full h-40"> {/* reduced height */}
+              <div className="relative w-full h-52">
                 <Image
                   src={project.image}
                   alt={project.title}
@@ -30,7 +30,7 @@ export default function Projects() {
               </div>
 
               {/* Project Details */}
-              <div className="p-4"> {/* tighter padding */}
+              <div className="p-4">
                 <h3 className="text-xl font-semibold text-foreground">{project.title}</h3>
 
                 <p className="mt-2 text-sm text-foreground line-clamp-2">

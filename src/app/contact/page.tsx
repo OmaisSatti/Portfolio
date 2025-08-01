@@ -26,15 +26,11 @@ export default function Contact() {
   // 🔹 Handle form submission
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
-    // ✅ Client-side validation (custom required checks)
     if (!formData.firstName || !formData.email || !formData.service || !formData.message) {
       alert("Please fill in all required fields.");
-      return; // ⛔ Don’t proceed further
+      return;
     }
-
-    setLoading(true); // ✅ Only set loading after validation passed
-
+    setLoading(true);
     try {
       const response = await fetch("/api/send-email", {
         method: "POST",
@@ -56,7 +52,7 @@ export default function Contact() {
       setLoading(false);
     }
   };
-  
+
   return (
     <div className="flex flex-col md:flex-row justify-center items-center md:items-center p-5 md:p-10 gap-10 bg-background text-foreground">
 
