@@ -1,58 +1,58 @@
 [
   {
     "name": "React Native",
-    "src": "/images/react.svg"
+    "src": "/images/svgs/react.svg"
   },
   {
     "name": "Next.js",
-    "src": "/images/nextjs.png"
+    "src": "/images/pngs/nextjs.png"
   },
   {
     "name": "Tailwind CSS",
-    "src": "/images/tailwind.svg"
+    "src": "/images/svgs/tailwind.svg"
   },
   {
     "name": "Redux",
-    "src": "/images/redux.svg"
+    "src": "/images/svgs/redux.svg"
   },
   {
     "name": "React.js",
-    "src": "/images/react.svg"
+    "src": "/images/svgs/react.svg"
   },
   {
     "name": "TypeScript",
-    "src": "/images/ts.svg"
+    "src": "/images/svgs/ts.svg"
   },
   {
     "name": "JavaScript",
-    "src": "/images/js.svg"
+    "src": "/images/svgs/js.svg"
   },
   {
     "name": "Node.js",
-    "src": "/images/nodejs.svg"
+    "src": "/images/svgs/nodejs.svg"
   },
   {
     "name": "Express.js",
-    "src": "/images/express.png"
+    "src": "/images/pngs/express.png"
   },
   {
     "name": "MongoDB",
-    "src": "/images/mongodb.svg"
+    "src": "/images/svgs/mongodb.svg"
   },
   {
     "name": "Firebase",
-    "src": "/images/firebase.svg"
+    "src": "/images/svgs/firebase.svg"
   },
   {
     "name": "GitHub",
-    "src": "/images/github.svg"
+    "src": "/images/svgs/github.svg"
   },
   {
     "name": "C#.Net",
-    "src": "/images/csharp.svg"
+    "src": "/images/svgs/csharp.svg"
   },
   {
     "name": "Figma",
-    "src": "/images/figma.svg"
+    "src": "/images/svgs/figma.svg"
   }
 ]

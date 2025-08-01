@@ -21,7 +21,7 @@ const Header = () => {
       <div className="container flex justify-between items-center mx-auto px-4 xl:px-10 text-foreground">
         <Link href="/">
           <Image
-            src="/images/logo.png"
+            src="/images/pngs/logo.png"
             alt="Omais Satti Logo"
             width={120}
             height={80}
@@ -90,7 +90,7 @@ const Header = () => {
 
           <div className="flex justify-center items-center w-full py-10">
             <Image
-              src="/images/logo.png"
+              src="/images/pngs/logo.png"
               alt="Omais Satti Logo"
               width={140}
               height={100}

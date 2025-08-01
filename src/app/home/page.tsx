@@ -10,8 +10,8 @@ export default function Home() {
 
   const downloadCV = () => {
     const link = document.createElement("a");
-    link.href = "/images/Omais-Satti-Resume.pdf";
-    link.download = "Omais_Satti_CV.pdf";
+    link.href = "/document/Omais-Satti-Resume.pdf";
+    link.download = "Omais-Satti-Resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -74,7 +74,7 @@ export default function Home() {
         <div className="relative flex justify-center items-center order-1">
           {/* Profile Image */}
           <Image
-            src="/images/omais.jpeg"
+            src="/images/pngs/omais.jpeg"
             alt="Omais Satti"
             width={400}
             height={400}
