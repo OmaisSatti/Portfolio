@@ -8,11 +8,12 @@
   --foreground: #020817;
   --border-color: #d1d5db;
 
+  --border-input: #cbd5e1; /* Dull gray-blue tone for both modes */
+
   --primary: #0f766e;
   --secondary: #e5e7eb;
   --accent: #0d9488;
   --overlay-color: rgba(0, 0, 0, 0.08);
-  /* Light Mode */
 }
 
 /* Dark Mode */
@@ -21,11 +22,12 @@
   --foreground: #F8FAFC;
   --border-color: #182660;
 
+  --border-input: #3b3f4c; /* Optional: keep same as light or use another dull color */
+
   --primary: #0f766e;
   --secondary: #0a0c11;
   --accent: #0d9488;
   --overlay-color: rgba(255, 255, 255, 0.1);
-  /* Dark Mode */
 }
 
 /* Smooth Theme Transition */
@@ -33,7 +35,6 @@ body {
   background-color: var(--background);
   color: var(--foreground);
   font-family: var(--font-jetBrainsMono), sans-serif;
-  /* Now it works */
   transition: background 0.3s ease, color 0.3s ease;
 }
 
@@ -43,18 +44,17 @@ body {
   color: var(--foreground);
 }
 
+/* Select Dropdown Styling */
 select option {
   background-color: var(--background);
   color: var(--foreground);
 }
 
-/* Dark mode options */
 .dark select option {
   background-color: var(--secondary);
   color: var(--foreground);
 }
 
-/* Focus state: Ensure primary color applies */
 select:focus option {
   background-color: var(--primary) !important;
   color: white !important;

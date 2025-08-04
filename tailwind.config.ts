@@ -25,6 +25,7 @@ const config: Config = {
         secondary: "var(--secondary)",
         accent: "var(--accent)",
         border: "var(--border-color)",
+        borderinput: 'var(--border-input)'
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],

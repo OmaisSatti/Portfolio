@@ -57,23 +57,23 @@ export default function Contact() {
     <div className="flex flex-col md:flex-row justify-center items-center md:items-center p-5 md:p-10 gap-10 bg-background text-foreground">
 
       {/* Contact Form */}
-      <div className="border rounded-xl p-6 md:p-10 w-full md:w-2/3 shadow-md transition duration-300 bg-background border-primary">
+      <div className="border rounded-xl p-6 md:p-10 w-full md:w-2/3 shadow-md transition duration-300 bg-background border-borderinput">
         <h2 className="text-2xl font-bold text-primary">Let&rsquo;s work together</h2>
         <p className="mt-2 text-foreground">Let&rsquo;s connect and bring your ideas to life! Drop me a message below.</p>
 
 
         <form className="mt-6" onSubmit={handleSubmit}>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <input required type="text" name="firstName" placeholder="First Name" value={formData.firstName} onChange={handleChange} className="border p-2 h-[48px] w-full rounded focus:outline-none focus:ring-0 transition bg-background text-foreground border-border focus:border-primary" />
-            <input required type="text" name="lastName" placeholder="Last Name" value={formData.lastName} onChange={handleChange} className="border p-2 h-[48px] w-full rounded focus:outline-none focus:ring-0 transition bg-background text-foreground border-border focus:border-primary" />
+            <input required type="text" name="firstName" placeholder="First Name" value={formData.firstName} onChange={handleChange} className="border p-2 h-[48px] w-full rounded focus:outline-none focus:ring-0 transition bg-background text-foreground border-borderinput focus:border-primary" />
+            <input required type="text" name="lastName" placeholder="Last Name" value={formData.lastName} onChange={handleChange} className="border p-2 h-[48px] w-full rounded focus:outline-none focus:ring-0 transition bg-background text-foreground border-borderinput focus:border-primary" />
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
-            <input required type="email" name="email" placeholder="Email Address" value={formData.email} onChange={handleChange} className="border p-2 h-[48px] w-full rounded focus:outline-none focus:ring-0 transition bg-background text-foreground border-border focus:border-primary" />
-            <input required type="tel" name="phone" placeholder="Phone Number" value={formData.phone} onChange={handleChange} className="border p-2 h-[48px] w-full rounded focus:outline-none focus:ring-0 transition bg-background text-foreground border-border focus:border-primary" />
+            <input required type="email" name="email" placeholder="Email Address" value={formData.email} onChange={handleChange} className="border p-2 h-[48px] w-full rounded focus:outline-none focus:ring-0 transition bg-background text-foreground border-borderinput focus:border-primary" />
+            <input required type="tel" name="phone" placeholder="Phone Number" value={formData.phone} onChange={handleChange} className="border p-2 h-[48px] w-full rounded focus:outline-none focus:ring-0 transition bg-background text-foreground border-borderinput focus:border-primary" />
           </div>
 
-          <select required name="service" value={formData.service} onChange={handleChange} className="border p-2 h-[48px] w-full mt-4 rounded transition bg-background border-border text-foreground focus:border-primary focus:ring-2 focus:ring-primary outline-none">
+          <select required name="service" value={formData.service} onChange={handleChange} className="border p-2 h-[48px] w-full mt-4 rounded transition bg-background border-borderinput text-foreground focus:border-primary focus:ring-2 focus:ring-primary outline-none">
             <option value="">Select a service</option>
             <option value="Mobile App Development">Mobile App Development</option>
             <option value="Web Development">Web Development</option>
@@ -81,7 +81,7 @@ export default function Contact() {
             <option value="Backend Development">Backend Development</option>
           </select>
 
-          <textarea required name="message" placeholder="Type your message here." value={formData.message} onChange={handleChange} className="border p-2 w-full mt-4 h-32 rounded focus:outline-none focus:ring-0 transition bg-background text-foreground border-border focus:border-primary"></textarea>
+          <textarea required name="message" placeholder="Type your message here." value={formData.message} onChange={handleChange} className="border p-2 w-full mt-4 h-32 rounded focus:outline-none focus:ring-0 transition bg-background text-foreground border-borderinput focus:border-primary"></textarea>
 
           <button type="submit" className="px-4 py-2 mt-4 rounded transition font-medium bg-primary text-white hover:bg-accent" disabled={loading}>
             {loading ? "Sending..." : "Send message"}
