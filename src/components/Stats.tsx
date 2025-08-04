@@ -14,6 +14,7 @@ const Stats = () => {
               className={"text-4xl xl:text-6xl font-extrabold transition duration-300 text-foreground"}
             >
               <CountUp end={stat.value} duration={3} delay={0.5} />
+              {stat.value >= 10 && "+"}
             </span>
 
             {/* Label */}
