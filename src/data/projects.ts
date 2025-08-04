@@ -66,10 +66,6 @@ export const projects: Project[] = [
       { name: "Redux", "icon": "/images/svgs/redux.svg" }
     ],
     "overview": "Legify is an online marketplace tailored for the buying and selling of authentic gold and luxury jewelry. The app offers a secure platform for sellers to showcase their gold items — including rings, bars, and coins — with verified authenticity. Buyers can explore products through category filters and visually appealing listings, all while enjoying the confidence that each purchase is verified and traceable. Users can add items to their cart, place orders, and track their shipping status in real time. The app also provides a comprehensive order history, both for buyers and sellers, complete with detailed breakdowns, discounts, delivery charges, and order statuses (Shipped, Delivered, Cancelled). Legify emphasizes transparency and trust through seller verification, clean UI, and seamless order management, making it a robust digital storefront for the luxury gold trade.",
-    "deployment": {
-      "android": "https://play.google.com/store/apps/details?id=com.legify",
-      "ios": "https://apps.apple.com/app/id9988776655"
-    }
   },
   {
     id: 4,
@@ -84,10 +80,6 @@ export const projects: Project[] = [
     ],
     overview:
       "Kutsbee is a full-featured mobile application designed for seamless salon and spa appointment booking. It empowers users to easily search, discover, and schedule services from a wide range of beauty and wellness providers based on location, service category (like hair styling, coloring, spa treatments, etc.), price, and user reviews. The app features a clean, intuitive interface allowing users to view salon details, select time slots from a dynamic calendar, and confirm bookings in just a few taps. Integrated payment methods support both online card payments and cash options. For salon owners, Kutsbee offers a backend system to manage bookings, service listings, pricing, staff, and availability in real time. The goal of Kutsbee is to modernize the beauty service industry by reducing wait times, streamlining appointment management, and improving customer satisfaction with a professional, tech-driven solution.",
-    deployment: {
-      android: "https://play.google.com/store/apps/details?id=com.kutsbee",
-      ios: "https://apps.apple.com/app/id1234567890"
-    }
   },
   {
     id: 5,
@@ -101,10 +93,6 @@ export const projects: Project[] = [
     ],
     overview:
       "SoulMatch is a modern matrimonial and partner-finding mobile application designed to help users discover compatible life partners through smart filtering, verified profiles, and secure messaging. Users can register using email, Google, or Facebook, and create rich personal profiles including interests, education, religion, and location. The app offers role-based filters (like Doctor, Engineer, Business, Freelancer) and features such as recently joined/viewed users, image privacy controls, OTP verification for security, and chat with voice message support. SoulMatch emphasizes privacy and personalization, allowing users to control who can see their photos and contact them. With real-time messaging, heart/favorite interactions, and a profile upgrade system, it creates a respectful and engaging space for individuals seeking serious relationships.",
-    deployment: {
-      android: "https://play.google.com/store/apps/details?id=com.soulmatch",
-      ios: "https://apps.apple.com/app/id1122334455"
-    }
   },
 
   {
@@ -119,10 +107,6 @@ export const projects: Project[] = [
       { "name": "Redux", "icon": "/images/svgs/redux.svg" }
     ],
     "overview": "LocalBaba is a hyperlocal food delivery app designed to connect customers with nearby restaurants and grocery stores. With a sleek and intuitive interface, users can log in or register, browse categorized menus, search for dishes or brands, and enjoy visually rich listings of popular restaurants and food items. The app supports multi-category filtering (Vegetables, Fruits, Beverages, Grocery, etc.), highlights trending brands, and features promotional banners with discounts. Users can seamlessly add items to their cart, modify quantities, and view detailed order summaries with calculated totals, delivery charges, and applied discounts. LocalBaba emphasizes speed and reliability by showcasing estimated delivery times, allowing customers to track their orders conveniently. The platform also integrates multiple login options including Google and Apple, enhancing user onboarding. Designed with scalability and user satisfaction in mind, LocalBaba brings convenience, variety, and comfort food to users’ doorsteps.",
-    "deployment": {
-      "android": "https://play.google.com/store/apps/details?id=com.localbaba",
-      "ios": "https://apps.apple.com/app/id1122334455"
-    }
   },
   {
     "id": 7,
@@ -134,10 +118,6 @@ export const projects: Project[] = [
       { "name": "Firebase", "icon": "/images/svgs/firebase.svg" }
     ],
     "overview": "Txtract is a powerful AI-based mobile application designed for extracting text and data from identity documents with high accuracy. Built with React Native and integrated with Microsoft Azure Cognitive Services, it enables real-time scanning, recognition, and parsing of text from documents like driver's licenses, ID cards, and more. Users can select the specific data fields they wish to extract—such as age, name, address, or document number—and seamlessly download or share them to the cloud. The app also includes tiered subscription plans with payment integration (Visa, MasterCard, PayPal), offering features like profile limits and direct messaging restrictions. With a modern UI and robust backend infrastructure powered by Azure, Txtract offers fast, secure, and scalable document intelligence for users seeking automation and efficiency in identity verification and data extraction.",
-    "deployment": {
-      "android": '',
-      "ios": ''
-    }
   },
   {
     "id": 8,
@@ -151,9 +131,5 @@ export const projects: Project[] = [
       { "name": "Firebase Auth", "icon": "/images/svgs/firebase.svg" }
     ],
     "overview": "JobPortal is a modern, feature-rich job search and recruitment application tailored for mobile users. Developed using React Native and powered by a Node.js backend with MongoDB, it allows users to explore thousands of job listings with advanced filtering and categorization options. The intuitive UI features a clean onboarding experience, secure authentication via email or social platforms (Google, Facebook), and a personalized dashboard. Job seekers can search and apply for jobs, view detailed job descriptions, and filter roles by category such as UI/UX, Software Engineering, Marketing, and more. The app also includes an employer panel where companies can post job listings, manage applicants, and conduct reviews. Real-time updates, push notifications, and profile customization enhance the user experience. With Firebase handling authentication and Redux managing global state, JobPortal is optimized for scalability, performance, and a seamless job-hunting journey.",
-    "deployment": {
-      "android": '',
-      "ios": ''
-    }
   }
 ];
