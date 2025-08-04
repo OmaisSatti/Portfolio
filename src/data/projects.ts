@@ -19,18 +19,20 @@ export const projects: Project[] = [
     }
   },
   {
-    id: 1,
-    title: "Sommos AI",
-    image: "/images/pngs/sommos-app.png",
-    techStack: [
-      { name: "Express.js", icon: "/images/pngs/express.png" },
-      { name: "React Native", icon: "/images/svgs/react.svg" },
-      { name: "Node.js", icon: "/images/svgs/nodejs.svg" }
+    "id": 1,
+    "title": "Sommos AI",
+    "image": "/images/pngs/sommos-app.png",
+    "techStack": [
+      { "name": "React Native", "icon": "/images/svgs/react.svg" },
+      { "name": "Redux", "icon": "/images/svgs/redux.svg" },
+      { "name": "Firebase", "icon": "/images/svgs/firebase.svg" },
+      { "name": "Node.js", "icon": "/images/svgs/nodejs.svg" },
+      { "name": "MongoDB", "icon": "/images/svgs/mongodb.svg" }
     ],
-    overview:
-      "An AI-powered internal company game designed to improve name recall among employees.",
-    deployment: {
-      web: "https://sommos.app"
+    "overview": "Sommos AI is a private social networking app crafted specifically for families. It allows users to build and explore their detailed family trees, connect with close relatives, and foster stronger familial bonds. The app offers an intuitive UI to visually map out lineage and add members easily. Users can preserve cherished moments through a shared Family Archive—uploading photos, videos, and stories—and access intelligent memory suggestions powered by AI. Sommos AI features a gamified engagement system with XP points and streaks, motivating family members to interact regularly. It also includes in-app chat, family milestones tracking, subscription-based premium options, and secure storage of generational data. With privacy at its core, Sommos AI offers a safe space to preserve legacies and nurture deeper family connections.",
+    "deployment": {
+      "android": '',
+      "ios": ''
     }
   },
   {
@@ -121,6 +123,37 @@ export const projects: Project[] = [
       "android": "https://play.google.com/store/apps/details?id=com.localbaba",
       "ios": "https://apps.apple.com/app/id1122334455"
     }
+  },
+  {
+    "id": 7,
+    "title": "Txtract App",
+    "image": "/images/pngs/txtract-app.png",
+    "techStack": [
+      { "name": "React Native", "icon": "/images/svgs/react.svg" },
+      { "name": "Redux", "icon": "/images/svgs/redux.svg" },
+      { "name": "Firebase", "icon": "/images/svgs/firebase.svg" }
+    ],
+    "overview": "Txtract is a powerful AI-based mobile application designed for extracting text and data from identity documents with high accuracy. Built with React Native and integrated with Microsoft Azure Cognitive Services, it enables real-time scanning, recognition, and parsing of text from documents like driver's licenses, ID cards, and more. Users can select the specific data fields they wish to extract—such as age, name, address, or document number—and seamlessly download or share them to the cloud. The app also includes tiered subscription plans with payment integration (Visa, MasterCard, PayPal), offering features like profile limits and direct messaging restrictions. With a modern UI and robust backend infrastructure powered by Azure, Txtract offers fast, secure, and scalable document intelligence for users seeking automation and efficiency in identity verification and data extraction.",
+    "deployment": {
+      "android": '',
+      "ios": ''
+    }
+  },
+  {
+    "id": 8,
+    "title": "JobPortal App",
+    "image": "/images/pngs/jobportal-app.png",
+    "techStack": [
+      { "name": "React Native", "icon": "/images/svgs/react.svg" },
+      { "name": "Redux Toolkit", "icon": "/images/svgs/redux.svg" },
+      { "name": "Node.js", "icon": "/images/svgs/nodejs.svg" },
+      { "name": "MongoDB", "icon": "/images/svgs/mongodb.svg" },
+      { "name": "Firebase Auth", "icon": "/images/svgs/firebase.svg" }
+    ],
+    "overview": "JobPortal is a modern, feature-rich job search and recruitment application tailored for mobile users. Developed using React Native and powered by a Node.js backend with MongoDB, it allows users to explore thousands of job listings with advanced filtering and categorization options. The intuitive UI features a clean onboarding experience, secure authentication via email or social platforms (Google, Facebook), and a personalized dashboard. Job seekers can search and apply for jobs, view detailed job descriptions, and filter roles by category such as UI/UX, Software Engineering, Marketing, and more. The app also includes an employer panel where companies can post job listings, manage applicants, and conduct reviews. Real-time updates, push notifications, and profile customization enhance the user experience. With Firebase handling authentication and Redux managing global state, JobPortal is optimized for scalability, performance, and a seamless job-hunting journey.",
+    "deployment": {
+      "android": '',
+      "ios": ''
+    }
   }
-
 ];
