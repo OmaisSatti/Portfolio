@@ -30,12 +30,14 @@ export default function Home() {
           >
             React Native Mobile App Developer
           </p>
+
           <h1
             className={`text-5xl mb-6 font-bold xl:text-8xl leading-tight transition duration-300 text-foreground`}
           >
             Hello I&rsquo;m <br />
             <span className="text-primary">Omais Satti</span>
           </h1>
+
           <p className="max-w-[500px] mb-9 text-foreground/80 transition duration-300 text-foreground/80">
             Passionate developer crafting efficient and scalable solutions with
             expertise in modern technologies and frameworks.

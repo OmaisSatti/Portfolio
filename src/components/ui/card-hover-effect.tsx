@@ -26,7 +26,7 @@ export const HoverEffect = ({
         <div
           key={idx}
           className={`relative group flex flex-col border items-center p-5 rounded-lg shadow-md transition-transform transform hover:scale-105 duration-300 
-            text-foreground bg-secondary dark:bg-background border-border`}
+            text-foreground bg-background border-border`}
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
         >

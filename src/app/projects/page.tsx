@@ -18,7 +18,7 @@ export default function Projects() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-6">
         {projects.map((project, index) => (
           <Link key={index} href={`/projects/${project.id}`} passHref>
-            <div className="cursor-pointer w-full rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105 bg-background border dark:border-[#182660]">
+            <div className="cursor-pointer w-full rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105 bg-background border-border border">
               {/* Project Image */}
               <div className="relative w-full h-52">
                 <Image
