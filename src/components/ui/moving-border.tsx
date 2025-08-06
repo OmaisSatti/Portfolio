@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { SVGProps } from "react";
 import {
   motion,
   useAnimationFrame,
@@ -93,9 +93,8 @@ export const MovingBorder = ({
   duration?: number;
   rx?: string;
   ry?: string;
-  [key: string]: any;
-}) => {
-  const pathRef = useRef<any>();
+} & SVGProps<SVGSVGElement>) => {
+  const pathRef = useRef<SVGRectElement | null>(null);
   const progress = useMotionValue<number>(0);
 
   useAnimationFrame((time) => {
@@ -106,14 +105,11 @@ export const MovingBorder = ({
     }
   });
 
-  const x = useTransform(
-    progress,
-    (val) => pathRef.current?.getPointAtLength(val).x,
+  const x = useTransform(progress, (val) =>
+    pathRef.current?.getPointAtLength(val)?.x ?? 0
   );
-
-  const y = useTransform(
-    progress,
-    (val) => pathRef.current?.getPointAtLength(val).y,
+  const y = useTransform(progress, (val) =>
+    pathRef.current?.getPointAtLength(val)?.y ?? 0
   );
 
   const transform = useMotionTemplate`translateX(${x}px) translateY(${y}px) translateX(-50%) translateY(-50%)`;
@@ -126,7 +122,7 @@ export const MovingBorder = ({
         className="absolute h-full w-full"
         width="100%"
         height="100%"
-        {...otherProps}
+        {...otherProps} // ✅ Now properly typed
       >
         <rect
           fill="none"
