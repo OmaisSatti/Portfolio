@@ -9,6 +9,7 @@ import {
 } from "motion/react";
 import { useRef } from "react";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 export function ExperienceCard({
   borderRadius = "1rem",
@@ -61,13 +62,14 @@ export function ExperienceCard({
           borderRadius: `calc(${borderRadius} * 0.96)`,
         }}
       >
-        <img
-          src={exp.image}
-          alt={exp.title}
-          width={80}
-          height={80}
-          className="w-20 h-20 flex-shrink-0 object-cover rounded-full"
-        />
+        <div className="w-20 h-20 flex-shrink-0 relative">
+          <Image
+            src={exp.image}
+            alt={exp.title}
+            fill
+            className="object-cover rounded-full"
+          />
+        </div>
         <div>
           <h3 className="xl:text-xl text-lg font-bold">{exp.title}</h3>
           <p className="text-primary font-semibold mt-2 text-base md:text-lg">
