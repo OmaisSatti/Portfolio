@@ -15,7 +15,7 @@ export const projects: Project[] = [
     "overview": "Instant Translator is a powerful multi-language translation app designed to facilitate real-time communication across different languages. Users can easily translate text, conversations, or even physical objects using various modes. The app offers voice-to-voice translation for fluid bilingual conversations, optical character recognition (OCR) for scanning and translating text from images or objects, and a dedicated camera translator to interpret text seen through the device’s camera. It also includes a multilingual dictionary, a history section for reviewing previous translations, and customizable settings for enhanced control. The app supports both manual and voice input, shows translation waveforms, and allows switching between languages in a single tap. With a sleek UI and smooth navigation, Instant Translator is a comprehensive tool for travelers, learners, and multilingual users alike.",
     "deployment": {
       "android": "https://play.google.com/store/apps/details?id=com.multisyn.InstantTranslator",
-      "ios": "https://apps.apple.com/app/id6450913450"
+      "ios": "https://apps.apple.com/us/app/instanttranslator/id6736442890"
     }
   },
   {
@@ -50,7 +50,7 @@ export const projects: Project[] = [
       "Concise5 is a microlearning mobile platform designed for busy professionals who want to learn on the go. It offers bite-sized tutorials — each under 5 minutes — in both audio and text formats across key domains like Azure Cloud, Cyber Security, IT Infrastructure, Microsoft, and Professional Development. Users can explore personalized content based on their interests, track progress through a scoring and grading system, and visualize performance using detailed graphs and analytics. The app includes a leaderboard, level-up achievements, playlists for tutorials, and assessment tools to evaluate understanding. Users can select preferred languages and switch between audio or reading modes for flexible learning. With features like biometric login, language preferences, user history, and tutorial value tracking, Concise5 delivers a complete learning experience tailored to individual goals and learning styles.",
     deployment: {
       android: "https://play.google.com/store/apps/details?id=com.concise5",
-      ios: "https://apps.apple.com/app/id9876543210"
+      ios: "https://apps.apple.com/pk/app/concise-5/id6504142552"
     }
   },
 
