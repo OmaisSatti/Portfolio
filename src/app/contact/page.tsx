@@ -3,7 +3,14 @@
 import { FaPhone } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 import { MdLocationOn } from "react-icons/md";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
+
+const SERVICE_OPTIONS = [
+  "Mobile App Development",
+  "Web Development",
+  "Frontend Development",
+  "Backend Development",
+];
 
 export default function Contact() {
   // 🔹 State to store form data
@@ -17,6 +24,19 @@ export default function Contact() {
   });
 
   const [loading, setLoading] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
+        setDropdownOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   // 🔹 Handle input changes
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -73,13 +93,36 @@ export default function Contact() {
             <input required type="tel" name="phone" placeholder="Phone Number" value={formData.phone} onChange={handleChange} className="border p-2 h-[48px] w-full rounded focus:outline-none focus:ring-0 transition bg-background text-foreground border-borderinput focus:border-primary" />
           </div>
 
-          <select required name="service" value={formData.service} onChange={handleChange} className="border p-2 h-[48px] w-full mt-4 rounded transition bg-background border-borderinput text-foreground focus:border-primary focus:ring-2 focus:ring-primary outline-none">
-            <option value="">Select a service</option>
-            <option value="Mobile App Development">Mobile App Development</option>
-            <option value="Web Development">Web Development</option>
-            <option value="Frontend Development">Frontend Development</option>
-            <option value="Backend Development">Backend Development</option>
-          </select>
+          <div ref={dropdownRef} className="relative mt-4">
+            <button
+              type="button"
+              onClick={() => setDropdownOpen((o) => !o)}
+              className="border p-2 h-[48px] w-full rounded focus:outline-none focus:ring-0 transition bg-background text-foreground border-borderinput focus:border-primary text-left flex items-center justify-between pr-10 bg-no-repeat bg-[length:1rem] bg-[position:right_0.75rem_center] [background-image:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%236b7280%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E')]"
+            >
+              <span className={formData.service ? "" : "text-[var(--placeholder)]"}>{formData.service || "Select a service"}</span>
+            </button>
+            {dropdownOpen && (
+              <ul
+                className="absolute z-20 top-full left-0 right-0 mt-1 rounded border border-borderinput bg-background text-foreground shadow-lg max-h-48 overflow-y-auto py-1"
+                role="listbox"
+              >
+                {SERVICE_OPTIONS.map((opt) => (
+                  <li key={opt} role="option" aria-selected={formData.service === opt}>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setFormData((prev) => ({ ...prev, service: opt }));
+                        setDropdownOpen(false);
+                      }}
+                      className="w-full text-left px-3 py-2 hover:bg-primary/10 focus:bg-primary/10 focus:outline-none text-foreground transition"
+                    >
+                      {opt}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
 
           <textarea required name="message" placeholder="Type your message here." value={formData.message} onChange={handleChange} className="border p-2 w-full mt-4 h-32 rounded focus:outline-none focus:ring-0 transition bg-background text-foreground border-borderinput focus:border-primary"></textarea>
 

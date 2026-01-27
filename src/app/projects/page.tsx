@@ -3,6 +3,7 @@ import { projects } from "@/data/projects";
 import Image from "next/image";
 import Link from "next/link";
 import { FaLocationArrow } from "react-icons/fa";
+import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
 
 export default function Projects() {
   return (
@@ -38,10 +39,14 @@ export default function Projects() {
                 </p>
 
                 {/* Tech Stack Icons */}
-                <div className="flex items-center gap-2 mt-3">
-                  {project.techStack.map((tech, i) => (
-                    <Image key={i} src={tech.icon} alt={tech.name} width={20} height={20} />
-                  ))}
+                <div className="flex items-center justify-start mt-3">
+                  <AnimatedTooltip
+                    items={project.techStack.map((tech, i) => ({
+                      id: i,
+                      name: tech.name,
+                      image: tech.icon,
+                    }))}
+                  />
                 </div>
 
                 {/* View Details Button */}

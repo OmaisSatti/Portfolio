@@ -9,6 +9,7 @@
   --border-color: #e5e5e5;
 
   --border-input: #cbd5e1; /* Dull gray-blue tone for both modes */
+  --placeholder: #64748b; /* Muted slate for placeholders on light bg */
 
   --primary: #0f766e;
   --secondary: #e5e7eb;
@@ -23,11 +24,18 @@
   --border-color: #1e293b;
 
   --border-input: #3b3f4c; /* Optional: keep same as light or use another dull color */
+  --placeholder: #94a3b8; /* Lighter slate for placeholders on dark bg */
 
   --primary: #0f766e;
   --secondary: #0a0c11;
   --accent: #0d9488;
   --overlay-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Shared placeholder color for inputs, textarea, and dropdown */
+input::placeholder,
+textarea::placeholder {
+  color: var(--placeholder);
 }
 
 /* Smooth Theme Transition */

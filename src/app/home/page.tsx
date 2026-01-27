@@ -74,19 +74,18 @@ export default function Home() {
 
         {/* Right - Image Section */}
         <div className="relative flex justify-center items-center order-1">
-          {/* Profile Image */}
+          {/* Profile Image - object-[50%_20%] positions image to show full head */}
           <Image
-            src="/images/pngs/omais.jpeg"
+            src="/images/pngs/omais.png"
             alt="Omais Satti"
             width={400}
             height={400}
-            className="w-[298px] xl:w-[400px] h-[298px] xl:h-[400px] rounded-full object-cover shadow-lg transition duration-300"
+            className="relative z-10 w-[298px] xl:w-[400px] h-[298px] xl:h-[400px] rounded-full object-cover object-[50%_20%] shadow-lg transition duration-300"
           />
 
-
-          {/* Animated Circle Around Image */}
+          {/* Animated Circle Around Image - positioned behind */}
           <motion.svg
-            className="absolute w-[300px] h-[300px] xl:w-[506px] xl:h-[506px]"
+            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] h-[320px] xl:w-[430px] xl:h-[430px] z-0 pointer-events-none"
             fill="transparent"
             viewBox="0 0 506 506"
             xmlns="http://www.w3.org/2000/svg"
