@@ -7,7 +7,6 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 export default function Home() {
-
   const downloadCV = () => {
     const link = document.createElement("a");
     link.href = "/document/Omais-Satti-Resume.pdf";
@@ -39,8 +38,9 @@ export default function Home() {
           </h1>
 
           <p className="max-w-[500px] mb-9 text-foreground/80 transition duration-300 text-foreground/80">
-            Passionate developer crafting efficient and scalable solutions with
-            expertise in modern technologies and frameworks.
+            Experienced React Native developer building scalable,
+            high-performance mobile applications using modern tools and
+            frameworks.
           </p>
 
           {/* Buttons & Icons */}
